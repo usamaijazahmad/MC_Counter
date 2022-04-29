@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="48dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/myClr"
+        android:textSize="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inc"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="132dp"
+        android:backgroundTint="@color/myclr2"
+        android:text="Increment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dec"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="132dp"
+        android:backgroundTint="@color/myclr2"
+        android:text="Decrement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inc" />
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="152dp"
+        android:backgroundTint="@color/myclr3"
+        android:text="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
